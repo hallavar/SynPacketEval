@@ -1,0 +1,16 @@
+# Ignore all hidden files and directories
+.*
+
+# EXCEPTIONS for important hidden files you may want to keep (remove if not needed)
+!.gitignore
+
+# Ignore the virtualenv and IDE files
+.SynPcktEval-Env/
+.spyproject/
+
+# Ignore temporary output files
+output_csvs/
+pcaps/syn.csv
+*.pyc
+__pycache__/
+
