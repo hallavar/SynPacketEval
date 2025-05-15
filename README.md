@@ -15,10 +15,7 @@ This tool allows you to compare a synthetic PCAP to fixed training and test sets
   - Malformed packet detection
 
 - 📊 **Flow-Level Metrics**:
-  - Wasserstein Distance (WD), JSD, PCD, CMD
-  - DKC (Diversity of Known Clusters)
-  - PRDC (Precision and Coverage)
-  - Authenticity score via Hamming neighborhood overlap
+  see https://ieeexplore.ieee.org/abstract/document/10628855
 
 - 🔁 End-to-end benchmarking from PCAP → metrics
 
@@ -43,7 +40,7 @@ python3 pcap_benchmark.py PATH_TO_YOUR_SYNTHETIC_PCAP
 You can customize:
 
 ```bash
-python3 pcap_benchmark.py pcaps/syn.pcap \
+python3 pcap_benchmark.py PATH_TO_YOUR_SYNTHETIC_PCAP \
   --train_pcap pcaps/train.pcap \
   --test_pcap pcaps/test.pcap \
   --num_runs 10 \
@@ -61,7 +58,7 @@ SynPacketEval/
 ├── evaluate_pcap.py         # Packet-level metrics
 ├── extract_netflows.py      # NetFlow extraction from PCAP
 ├── metrics.py               # Flow-level metrics
-└── pcaps/                   # Input PCAPs (train, test, syn)
+└── pcaps/                   # Input PCAPs (train+test)
 ```
 
 ---
