@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ### 2. Run the evaluation
 
 ```bash
-python3 pcap_benchmark.py pcaps/syn.pcap
+python3 pcap_benchmark.py PATH_TO_YOUR_SYNTHETIC_PCAP
 ```
 
 You can customize:
